@@ -17,14 +17,16 @@ const fixture = [
 	'Desktop.ini',
 	'npm-debug.log',
 	'.test.swp',
-	'@eaDir'
+	'@eaDir',
+	'~$-Word Document.docx'
 ];
 
 const notFixture = [
 	'test',
 	'Icon',
 	'Icons.woff',
-	'.Spotlight-V100-unicorn'
+	'.Spotlight-V100-unicorn',
+	'Word Document.docx'
 ];
 
 test('matches junk files', t => {
