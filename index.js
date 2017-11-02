@@ -19,7 +19,8 @@ const blacklist = [
 	'^Thumbs\\.db$',                 // Image file cache
 	'^ehthumbs\\.db$',               // Folder config file
 	'^Desktop\\.ini$',               // Stores custom folder attributes
-	'@eaDir$'                        // Synology Diskstation "hidden" folder where the server stores thumbnails
+	'@eaDir$',                       // Synology Diskstation "hidden" folder where the server stores thumbnails
+	'^~\\$-'                         // Microsoft Office temporary document lock	
 ];
 
 exports.re = new RegExp(blacklist.join('|'));
